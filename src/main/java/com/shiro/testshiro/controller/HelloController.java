@@ -56,7 +56,7 @@ public class HelloController {
     public String testLogin(@RequestParam("username") String username, @RequestParam("password") String password) {
 
         Subject subject = SecurityUtils.getSubject();
-        //根据用户名和用户密码创建token
+        //根据用户名和用户密码创建token.
             UsernamePasswordToken token = new UsernamePasswordToken(username, password);
 
             //执行登录操作
