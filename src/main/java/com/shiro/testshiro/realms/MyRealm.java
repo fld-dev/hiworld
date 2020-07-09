@@ -31,21 +31,18 @@ public class MyRealm extends AuthorizingRealm {
     //用于用户权限的授取和封装
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-        String username = (String) principals.getPrimaryPrincipal();
-        Set<String> roles = new HashSet<>();
-        Set<String> permissions=new HashSet<>();
+        String username = (String) principals.getPrimaryPrincipal();//获取前端表单传过来的用户名
+        Set<String> roles = new HashSet<>();//两种授权方式：1.赋予用户角色，多个角色存储在set数组中
+        Set<String> permissions=new HashSet<>();//两种授权方式：2.赋予用户权限标识，多个权限标识存储在set数组中
 
         if ("admin".equals(username)) {
-            roles.add("admin");
-            permissions.add("user:list");
+            roles.add("admin");//给用户名为admin的用户赋予admin角色标识.在控制层的接口上通过@RequireRoles("admin")做角色方面的权限控制
+            permissions.add("user:list");//给用户名为admin的用户赋予[user:list]权限标识.在控制层的接口上通过@RequiredPermission("user:list")做权限标识方面的权限控制
         }
 
-//        roles.add("admin");//通过@RequireRoles("admin")来修饰controller层来完成权限认证
-//        permissions.add("user:list");//通过@RequiredPermission("admin:query")来修饰controller层完成权限认证
-
         //封装权限信息
-        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo(roles);
-        simpleAuthorizationInfo.setStringPermissions(permissions);
+        SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo(roles);//将用户授予的角色权限set进权限信息
+        simpleAuthorizationInfo.setStringPermissions(permissions);//将用户授予的权限标识信息set进权限信息
         return simpleAuthorizationInfo;
     }
 

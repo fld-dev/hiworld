@@ -15,7 +15,42 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.encoding>UTF-8</project.build.encoding>
+        <project.build.locales>zh_CN</project.build.locales>
+        <project.build.jdk>1.8</project.build.jdk>
+
+        <plugin.maven-compiler>3.8.0</plugin.maven-compiler>
+        <plugin.maven-resources>3.1.0</plugin.maven-resources>
+        <plugin.maven-surefire>2.22.1</plugin.maven-surefire>
+        <plugin.maven-source>3.0.1</plugin.maven-source>
+        <plugin.maven-javadoc>2.10.4</plugin.maven-javadoc>
+        <plugin.maven-shade>3.1.1</plugin.maven-shade>
+        <plugin.maven-jar>3.1.0</plugin.maven-jar>
+        <plugin.maven-deploy>3.0.0-M1</plugin.maven-deploy>
+
+
+        <org.springframework.boot.version>2.2.7.RELEASE</org.springframework.boot.version>
+
+        <mysql-connector-java.version>5.1.37</mysql-connector-java.version>
+        <druid-spring-boot-starter.version>1.1.22</druid-spring-boot-starter.version>
+        <mybatis-spring-boot-starter.version>2.1.2</mybatis-spring-boot-starter.version>
+        <mapper-spring-boot-starter.version>2.1.0</mapper-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.9</pagehelper-spring-boot-starter.version>
+        <lombok.version>1.18.8</lombok.version>
+        <swagger-spring-boot-starter.version>1.8.0.RELEASE</swagger-spring-boot-starter.version>
+        <dubbo-spring-boot-starter.version>2.7.6</dubbo-spring-boot-starter.version>
+        <dubbo.version>2.6.4</dubbo.version>
+        <org.apache.dubbo.version>2.7.6</org.apache.dubbo.version>
+        <org.apache.zookeeper.version>3.4.14</org.apache.zookeeper.version>
+        <org.apache.curator.version>4.3.0</org.apache.curator.version>
+        <snowflake.version>1.0.0</snowflake.version>
+        <gwplay.common.version>1.0.0-SNAPSHOT</gwplay.common.version>
+
+        <com.alibaba.fastjson.version>1.2.67</com.alibaba.fastjson.version>
+        <org.apache.commons.commons-lang3.version>3.8</org.apache.commons.commons-lang3.version>
+        <org.apache.commons.commons-collections4.version>4.2</org.apache.commons.commons-collections4.version>
+
     </properties>
 
     <dependencies>

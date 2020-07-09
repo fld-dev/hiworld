@@ -1,6 +1,7 @@
 package com.shiro.testshiro.config;
 
 import com.shiro.testshiro.realms.MyRealm;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.slf4j.Logger;
@@ -11,19 +12,15 @@ import org.springframework.context.annotation.Configuration;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@Slf4j
 @Configuration//用来声明替换xml的类，常与@Bean搭配使用
 public class ShiroConfig {
-    private static final Logger logger = LoggerFactory.getLogger(ShiroConfig.class);
-
-
-
-
 
     //注入自定义的realm
     @Bean
     public MyRealm myAuthRealm(){
         MyRealm myRealm = new MyRealm();
-        logger.info("=====myRealm注入完成");
+        log.info("=====myRealm注入完成");
         return myRealm;
     }
 
@@ -33,7 +30,7 @@ public class ShiroConfig {
         //将自定义的realm加进来
         DefaultWebSecurityManager manager = new DefaultWebSecurityManager();
         manager.setRealm(myAuthRealm());
-        logger.info("=======securityManager注入完成");
+        log.info("=======securityManager注入完成");
         return manager;
     }
 
