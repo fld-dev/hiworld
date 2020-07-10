@@ -4,8 +4,6 @@ import com.shiro.testshiro.realms.MyRealm;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -48,12 +46,14 @@ public class ShiroConfig {
         //登陆功能的放行
         filterChainDefinitionMap.put("/login","anon");
         //核心资源的拦截
-        filterChainDefinitionMap.put("/testShiro","authc");
-//        filterChainDefinitionMap.put("/shiro","authc");
+        filterChainDefinitionMap.put("/testShiro","authc");//此核心资源表示只要用户登录成功便可访问，不需要该用户携带任何权限表示信息
+        //filterChainDefinitionMap.put("/testShiro", "roles[admin]");//此核心资源表示登录用于需要携带admin的角色权限才可访问此链接
+//        filterChainDefinitionMap.put("/shiro","authc");//此核心资源被拦截到登录页面，在登陆页面用户登陆成功即可访问此链接
         //用户权限认证，仅admin放行
         //filterChainDefinitionMap.put("/testShiro","roles[admin]");
         //用户权限认证，含对应权限标识则放行
-        filterChainDefinitionMap.put("/testSuccess","authc,perms[user:list]");
+        filterChainDefinitionMap.put("/testSuccess","authc,perms[user:list]");//访问此资源需要用户携带权限标识user:list
+        filterChainDefinitionMap.put("/testSuccess", "authc,roles[admin]");//访问此资源需要用户携带角色权限信息admin
        // filterChainDefinitionMap.put("/testShiro","perms[\"admin:query\"]");
 
         //设置退出登录按钮
@@ -63,9 +63,9 @@ public class ShiroConfig {
         //filterChainDefinitionMap.put("/**", "authc");
 
         //设置默认登录的url,用户登录失败会访问该url,设置此项的目的是让用户进行登录认证
-        shiroFilterFactoryBean.setLoginUrl("/login");
-        shiroFilterFactoryBean.setSuccessUrl("/ShiroSuccess");
-        shiroFilterFactoryBean.setUnauthorizedUrl("/error1");
+        shiroFilterFactoryBean.setLoginUrl("/login");//设置默认登陆的url，当用户访问拦截的地址时跳转到此链接
+        //shiroFilterFactoryBean.setSuccessUrl("/ShiroSuccess");//设置登陆成功的url，一般不需要设置，通过controller层的return实现登陆成功跳转
+        shiroFilterFactoryBean.setUnauthorizedUrl("/error1");//当用户访问某资源却没有对应的访问权限时,跳转到此链接
         //将过滤链载入过滤器,固定格式
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;

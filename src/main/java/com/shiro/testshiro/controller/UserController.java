@@ -18,7 +18,7 @@ public class UserController {
     }
 
     @RequiresPermissions("user:error")
-    @RequestMapping(value = "/testError1",method = RequestMethod.GET)
+    @RequestMapping(value = "/error1",method = RequestMethod.GET)
     public String testError1(){
     return "error1";
     }

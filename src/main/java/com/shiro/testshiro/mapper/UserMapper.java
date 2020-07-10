@@ -9,9 +9,7 @@ import tk.mybatis.mapper.common.ExampleMapper;
 
 
 @Repository
-public interface UserMapper extends
-        BaseMapper<User>,
-        ExampleMapper<User> {
+public interface UserMapper{
 
     @Select("SELECT * FROM sys_users WHERE username = #{username} AND password = #{password}")
     User findUser(@Param("username") String username, @Param("password") String password);

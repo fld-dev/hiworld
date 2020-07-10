@@ -32,15 +32,15 @@ public class HelloController {
         return "import";
     }
 
-    @RequestMapping("/error1")
-    public String error1(){
-        return "error1";
-    }
+//    @RequestMapping("/error1")
+//    public String error1(){
+//        return "error1";
+//    }
 
-    @RequestMapping("/success")
-    public String success(){
-        return "success";
-    }
+//    @RequestMapping("/success")
+//    public String success(){
+//        return "success";
+//    }
 
     @RequestMapping("/login")
     public String login(){
@@ -52,12 +52,11 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/testLogin",method = RequestMethod.POST)
-
     public String testLogin(@RequestParam("username") String username, @RequestParam("password") String password) {
-
+        //@RequestParam表示请求方法中必须包含此参数，不包含则报错
         Subject subject = SecurityUtils.getSubject();
         //根据用户名和用户密码创建token.
-            UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+            UsernamePasswordToken token = new UsernamePasswordToken(username, password);//获取前端表单传过来的用户名和密码
 
             //执行登录操作
             try {
@@ -66,7 +65,6 @@ public class HelloController {
                 return "hello";
                 //return "登录成功";
             } catch (Exception e) {
-                e.printStackTrace();
                 System.out.println("用户名或密码错误");
                 return "login";
             }
