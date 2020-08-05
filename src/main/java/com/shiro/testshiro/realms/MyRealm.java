@@ -3,8 +3,6 @@ package com.shiro.testshiro.realms;
 import com.shiro.testshiro.mapper.UserMapper;
 import com.shiro.testshiro.pojo.User;
 import org.apache.shiro.authc.*;
-import org.apache.shiro.authc.credential.CredentialsMatcher;
-import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -12,7 +10,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class MyRealm extends AuthorizingRealm {

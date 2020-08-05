@@ -2,6 +2,7 @@ package com.shiro.testshiro.config;
 
 import com.shiro.testshiro.realms.MyRealm;
 import lombok.extern.slf4j.Slf4j;
+
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.context.annotation.Bean;

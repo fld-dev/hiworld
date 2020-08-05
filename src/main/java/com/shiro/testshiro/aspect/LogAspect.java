@@ -1,10 +1,16 @@
 package com.shiro.testshiro.aspect;
 
 import com.shiro.testshiro.annotation.UserAccess;
+import com.shiro.testshiro.vo.JsonResult;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
+import java.sql.Timestamp;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 @Aspect
 @Component
@@ -21,15 +27,15 @@ public class LogAspect {
     //@Around("@annotation(com.shiro.testshiro.annotation.UserAccess)")//应用于方法级别，实现细粒度的控制，配合自定义注解。通过自定义注解修饰的类或方法做锁定并为他们实现功能的拓展@annotation路径只能写自定义注解的路径
 
     //@Around注解中的内容为一个切入点表达式，通过此表达式告诉spring这个通知会什么时候执行
-//    @Pointcut("@annotation(com.shiro.testshiro.annotation.UserAccess)")//将自己自定义注解作为切点的根据，@annotation路径只能为自定义注解的全路径
-//    public void access(){
-//
-//    }
+    @Pointcut("@annotation(com.shiro.testshiro.annotation.UserAccess)")//将自己自定义注解作为切点的根据，@annotation路径只能为自定义注解的全路径
+    public void access(){
 
-//    @Before("access()")//在目标方法Object result = joinPoint.proceed();执行之前执行的一段代码
-//    public void doBefore(JoinPoint joinPoint)throws Throwable{
-//        System.out.println("AOP Before:进入目标方法前！");
-//    }
+    }
+
+    @Before("access()")//在目标方法Object result = joinPoint.proceed();执行之前执行的一段代码
+    public void doBefore(JoinPoint joinPoint)throws Throwable{
+        System.out.println("AOP Before:进入目标方法前！");
+    }
 
     @Around("@annotation(userAccess)")//@Around环绕通知可以取代@Before与@After
         //细粒度表达式的另一种实现方法配合@Pointcut 与自定义注解配合实现对目标方法细粒度的控制,@Around中的切入点表达式的内容需要与around环绕通知方法中的参数相匹配
@@ -42,12 +48,16 @@ public class LogAspect {
         System.out.println("获取自定义注解中的值："+userAccess.value());
         Object result = joinPoint.proceed();//执行目标方法，目标方法的锁定通过粗粒度表达式或细粒度表达式确定
         System.out.println("AOP After:进入目标方法后");
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss"));
+        Timestamp now = new Timestamp(new Date().getTime());
+        System.out.println(now);
+        System.out.println(createTime);
         System.out.println("======================目标方法执行后=======================");
         return result;//return 返回目标方法的执行结果
     }
 
-//    @After("access()")//在目标方法Object result = joinPoint.proceed();执行之后执行的一段代码
-//    public void doAfter(JoinPoint joinPoint){
-//        System.out.println("AOP After:进入目标方法后");
-//    }
+    @After("access()")//在目标方法Object result = joinPoint.proceed();执行之后执行的一段代码
+    public void doAfter(JoinPoint joinPoint){
+        System.out.println("AOP After:进入目标方法后");
+    }
 }

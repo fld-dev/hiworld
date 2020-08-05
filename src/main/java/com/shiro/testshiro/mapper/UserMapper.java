@@ -4,8 +4,7 @@ import com.shiro.testshiro.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-import tk.mybatis.mapper.common.BaseMapper;
-import tk.mybatis.mapper.common.ExampleMapper;
+
 
 
 @Repository
