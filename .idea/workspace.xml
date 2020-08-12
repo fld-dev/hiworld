@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,31 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6867105-abb0-43f2-9770-f4202231913c" name="Default Changelist" comment="testAop">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/mapper/database1/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/mapper/database2/PPCUserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/pojo/database1/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/pojo/database2/PPCUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase1Properties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase2Properties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/service/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b6867105-abb0-43f2-9770-f4202231913c" name="Default Changelist" comment="多源">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/higit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/higit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/TestShiroApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/TestShiroApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/realms/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/realms/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase1Properties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase2Properties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataSourceConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/shiro/testshiro/TestShiroApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shiro/testshiro/TestShiroApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +59,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
+        <option name="mavenHome" value="C:\Users\Administrator\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -95,7 +84,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gwplay-user" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,10 +95,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shiro.testshiro.config" />
       <recent name="com.shiro.testshiro.mapper.database1" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="higit" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiro.testshiro.TestShiroApplication" />
@@ -118,6 +119,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,7 +147,12 @@
       <workItem from="1595640999269" duration="852000" />
       <workItem from="1596505413645" duration="22806000" />
       <workItem from="1596535579828" duration="3929000" />
-      <workItem from="1596592329251" duration="13516000" />
+      <workItem from="1596592329251" duration="16018000" />
+      <workItem from="1596679158613" duration="4249000" />
+      <workItem from="1596783671153" duration="5273000" />
+      <workItem from="1596849379324" duration="3427000" />
+      <workItem from="1597023317681" duration="180000" />
+      <workItem from="1597225378867" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1592293512297</created>
@@ -189,11 +196,18 @@
       <option name="project" value="LOCAL" />
       <updated>1594372443256</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="多源">
+      <created>1596617587745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596617587745</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -211,7 +225,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="优化" />
     <MESSAGE value="testAop" />
-    <option name="LAST_COMMIT_MESSAGE" value="testAop" />
+    <MESSAGE value="多源" />
+    <option name="LAST_COMMIT_MESSAGE" value="多源" />
   </component>
   <component name="WindowStateProjectService">
     <state x="849" y="407" key="#Assign_Data_Sources" timestamp="1596530832533">
@@ -250,42 +265,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" width="1536" height="860" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596536743996" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1592293312933">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1596784409837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592293312932" />
-    <state width="1860" height="278" key="GridCell.Tab.0.bottom" timestamp="1596617260672">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596784409837" />
+    <state width="1867" height="269" key="GridCell.Tab.0.bottom" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.0.center" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.0.center" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.0.left" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.0.left" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.0.right" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.0.right" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.1.bottom" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.1.bottom" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.1.center" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.1.center" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.1.left" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.1.left" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
-    <state width="1860" height="278" key="GridCell.Tab.1.right" timestamp="1596617260672">
+    <state width="1867" height="269" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
+    <state width="1867" height="269" key="GridCell.Tab.1.right" timestamp="1596703549282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596617260672" />
+    <state width="1867" height="269" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596703549282" />
     <state width="1860" height="344" key="GridCell.Tab.2.bottom" timestamp="1596600472333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,9 +317,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="344" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596600472333" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1596596983754">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1597225573294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597225573294" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596596983754" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1594605563991">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -318,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="223" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594275940337" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594372448660">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596681055633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594372448660" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596681055633" />
     <state x="662" y="251" width="596" height="538" key="find.popup" timestamp="1596526046370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
