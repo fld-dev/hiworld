@@ -22,15 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6867105-abb0-43f2-9770-f4202231913c" name="Default Changelist" comment="多源">
+    <list default="true" id="b6867105-abb0-43f2-9770-f4202231913c" name="Default Changelist" comment="阿里分布式多源">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/higit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/higit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/config/DataSourceConfig1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase1Properties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataBase2Properties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shiro/testshiro/properties/DataSourceConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,17 +93,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="higit" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shiro.testshiro.TestShiroApplication" />
@@ -152,7 +134,8 @@
       <workItem from="1596783671153" duration="5273000" />
       <workItem from="1596849379324" duration="3427000" />
       <workItem from="1597023317681" duration="180000" />
-      <workItem from="1597225378867" duration="619000" />
+      <workItem from="1597225378867" duration="726000" />
+      <workItem from="1597285040516" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1592293512297</created>
@@ -203,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596617587745</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="阿里分布式多源">
+      <created>1597226069455</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597226069455</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +216,8 @@
     <MESSAGE value="优化" />
     <MESSAGE value="testAop" />
     <MESSAGE value="多源" />
-    <option name="LAST_COMMIT_MESSAGE" value="多源" />
+    <MESSAGE value="阿里分布式多源" />
+    <option name="LAST_COMMIT_MESSAGE" value="阿里分布式多源" />
   </component>
   <component name="WindowStateProjectService">
     <state x="849" y="407" key="#Assign_Data_Sources" timestamp="1596530832533">
@@ -334,9 +325,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="223" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594275940337" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596681055633">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597226075055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597226075055" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596681055633" />
     <state x="662" y="251" width="596" height="538" key="find.popup" timestamp="1596526046370">
       <screen x="0" y="0" width="1920" height="1040" />
